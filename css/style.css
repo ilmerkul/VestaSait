@@ -539,6 +539,11 @@ li.phone a:hover {
 	border-right: 2px solid #c9c9c9;
     border-bottom: 2px solid #c9c9c9;
     transform: translateY(-50%) rotate(45deg);
+    transition: all 0.5s ease 0s;
+}
+
+.deals.open:after {
+	transform: translateY(-50%) rotate(-135deg);
 }
 
 .deals__list {

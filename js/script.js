@@ -29,7 +29,8 @@ ClassInputSelect1 = '.deal__input'
 
 function CustomSelect(ClassBtnSelect, ClassListSelect, ClassListSelectItem, ClassInputSelect) {
 	document.querySelector(ClassBtnSelect).addEventListener('click', function () {
-	document.querySelector(ClassListSelect).classList.toggle('visible')
+	document.querySelector(ClassListSelect).classList.toggle('visible');
+	document.querySelector(ClassBtnSelect).classList.toggle('open');
 	});
 
 
@@ -39,12 +40,14 @@ function CustomSelect(ClassBtnSelect, ClassListSelect, ClassListSelectItem, Clas
 			document.querySelector(ClassBtnSelect).innerText = this.innerText;
 			document.querySelector(ClassInputSelect).value = this.dataset.value;
 			document.querySelector(ClassListSelect).classList.remove('visible');
+			document.querySelector(ClassBtnSelect).classList.remove('open');
 		})
 	});
 
 	document.addEventListener('click', function (e) {
 		if (e.target !== document.querySelector(ClassBtnSelect)) {
 			document.querySelector(ClassListSelect).classList.remove('visible');
+			document.querySelector(ClassBtnSelect).classList.remove('open');
 		}
 	})
 };

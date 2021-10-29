@@ -23,6 +23,7 @@
 							<li><a href="#" class="header__link">ПРОДАТЬ/СДАТЬ</a></li>
 							<li><a href="#" class="header__link">О НАС</a></li>
 							<li class="phone header__link">
+								<button href="#" class="phone__btn"></button>
 								<a href="#">+7 (3537) 30-11-35</a>
 								<ul class="sub-phone">
 									<li>+7 (3537) 30-11-35</li>
@@ -39,7 +40,36 @@
 			<div class="content">
 				<div class="search">
 					<div class="container">
-						<div class="search__body"></div>
+						<div class="search__body">
+							<h1>Агенство Недвижимости Веста</h1>
+							<div class="filter__wrapper">
+								<div class="tab">
+									<button>Купить/Снять</button>
+									<button>Продать/Оценить</button>
+								</div>
+								<div class="tab__content">
+									<form action="/objects/" class="main__filter">
+										<div class="select__search-name">
+											<select name="deals" class="select__deal">
+												<option value="Продажа">Купить</option>
+												<option value="Аренда">Снять</option>
+											</select>
+										</div>
+										<div class="dropdown__search">
+											<button class="downbtn2">Комнаты</button>
+										</div>
+										<div class="dropdown__search">
+											<button class="downbtn3">Площадь</button>
+										</div>
+										<div class="dropdown__search">
+											<button class="downbtn4">Цена</button>
+										</div>
+										<input type="text" class="keywordsearch" placeholder="Введите адрес, район, метро или артикул объекта">
+										<button class="drop__search">Найти</button>
+									</form>
+								</div>
+							</div>
+						</div>
 					</div>
 				</div>
 				<div class="container">

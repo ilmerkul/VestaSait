@@ -156,6 +156,10 @@ li.phone .phone__btn {
     transform: translateY(-50%) rotate(45deg);
 }
 
+.header__list li.phone.active:after {
+	transform: translateY(-50%) rotate(-135deg);
+}
+
 .header__list .sub-phone {
 	opacity: 0;
 	visibility: hidden;

@@ -478,6 +478,148 @@ li.phone a:hover {
 	line-height: 1.2;
 }
 
+.filter__wrapper {
+	margin: 200px 0px 0px 0px;
+}
+
+.filter__wrapper .tab button {
+	background-color: #444;
+	color: white;
+	padding: 15px 20px;
+	transition: all .4s;
+	opacity: 0.5;
+}
+
+.filter__wrapper .tab1 {
+	border-top-left-radius: 10px;
+}
+
+.filter__wrapper .tab2 {
+	border-top-right-radius: 10px;
+}
+
+.filter__wrapper .tab button.active {
+	opacity: 1;
+}
+
+.filter__wrapper .tab button:not(.active):hover {
+	background-color: #222;
+	opacity: 1;
+}
+
+.tab__content form {
+	display: flex;
+}
+
+.select__search-name {
+	position: relative;
+}
+
+.deals {
+	width: 100%;
+	text-align: center;
+	border-bottom-left-radius: 3px;
+	height: 60px;
+	padding: 15px 30px;
+	background-color: white;
+	transition: all 0.2s ease 0s;
+}
+
+.deals:hover {
+	background-color: #b92b0e;
+}
+
+.deals:after {
+	position: absolute;
+	top: 50%;
+	right: 15px;
+	width: 6px;
+	height: 6px;
+	content: '';
+	border-right: 2px solid #c9c9c9;
+    border-bottom: 2px solid #c9c9c9;
+    transform: translateY(-50%) rotate(45deg);
+}
+
+.deals__list {
+	display: none;
+	position: absolute;
+	left: 0;
+	top: 70px;
+	list-style: none;
+	background-color: white;
+	overflow: hidden;
+	z-index: 3;
+	border-radius: 10px;
+	width: 100%;
+}
+
+.deals__list.visible {
+	display: block;
+}
+
+.deals__list-item {
+	padding: 15px 20px;
+	transition: all 0.2s ease 0s;
+	cursor: pointer;
+}
+
+.deals__list-item:hover {
+	background-color: #b92b0e;
+}
+
+.select__search-name input {
+	display: none;
+}
+
+.dropdown__search {
+	position: relative;
+}
+
+.dropdown__search button {
+	width: 100%;
+	text-align: center;
+	height: 60px;
+	padding: 15px 30px;
+	background-color: white;
+	transition: all 0.2s ease 0s;
+}
+
+.dropdown__search button:after {
+	position: absolute;
+	top: 50%;
+	right: 15px;
+	width: 6px;
+	height: 6px;
+	content: '';
+	border-right: 2px solid #c9c9c9;
+    border-bottom: 2px solid #c9c9c9;
+    transform: translateY(-50%) rotate(45deg);
+}
+
+.dropdown__search button:hover {
+	background-color: #b92b0e;
+}
+
+.drop__search {
+	text-align: center;
+	border-bottom-right-radius: 3px;
+	height: 60px;
+	padding: 15px 30px;
+	background-color: #5e5373;
+	transition: all 0.2s ease 0s;
+	color: white;
+}
+
+.drop__search:hover {
+	background-color: rgb(113, 100, 138);
+}
+
+.keywordsearch {
+	width: 100%;
+	padding: 0px 0px 0px 10px;
+}
+
 @media (max-width: 767px) {
 	.content {
 		padding: 50px 0px 0px 0px;

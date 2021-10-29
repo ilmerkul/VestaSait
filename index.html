@@ -44,25 +44,27 @@
 							<h1>Агенство Недвижимости Веста</h1>
 							<div class="filter__wrapper">
 								<div class="tab">
-									<button>Купить/Снять</button>
-									<button>Продать/Оценить</button>
+									<button class="tab1 active">Купить/Снять</button>
+									<button class="tab2">Продать/Оценить</button>
 								</div>
 								<div class="tab__content">
 									<form action="/objects/" class="main__filter">
 										<div class="select__search-name">
-											<select name="deals" class="select__deal">
-												<option value="Продажа">Купить</option>
-												<option value="Аренда">Снять</option>
-											</select>
+											<button class="deals" type="button">Купить</button>
+											<ul class="deals__list">
+												<li class="deals__list-item" data-value='Продажа'>Купить</li>
+												<li class="deals__list-item" data-value='Аренда'>Снять</li>
+											</ul>
+											<input type="text" name="deal" class="deal__input" value="Продажа">
 										</div>
 										<div class="dropdown__search">
-											<button class="downbtn2">Комнаты</button>
+											<button class="downbtn2" type="button">Комнаты</button>
 										</div>
 										<div class="dropdown__search">
-											<button class="downbtn3">Площадь</button>
+											<button class="downbtn3" type="button">Площадь</button>
 										</div>
 										<div class="dropdown__search">
-											<button class="downbtn4">Цена</button>
+											<button class="downbtn4" type="button">Цена</button>
 										</div>
 										<input type="text" class="keywordsearch" placeholder="Введите адрес, район, метро или артикул объекта">
 										<button class="drop__search">Найти</button>

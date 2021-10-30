@@ -904,7 +904,11 @@ li.phone a:hover {
 
 	.about-company-right-blocks {
 		display: flex;
+		justify-content: space-between;
 		margin: 20px 0px 0px 0px;
 	}
-}
 
+	.about-company-right-blocks a:last-of-type {
+		display: none;
+	}
+}

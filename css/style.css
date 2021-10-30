@@ -466,7 +466,7 @@ li.phone a:hover {
 }
 
 .search__body {
-	height: 700px
+	height: 650px
 }
 
 .search__body h1 {
@@ -734,5 +734,101 @@ li.phone a:hover {
 @media (max-width: 767px) {
 	.content {
 		padding: 50px 0px 0px 0px;
+	}
+
+	.search__body {
+		height: 700px;
+	}
+
+	.filter__wrapper {
+		margin: 150px 0px 0px 0px;
+	}
+
+	.tab__content form {
+		display: block;
+	}
+
+	.deals {
+		border-radius: 10px;
+		border-top-left-radius: 0;
+	}
+
+	.dropdown__search button {
+		display: none;
+	}
+
+	.drop__search {
+		width: 100%;
+		border-radius: 10px;
+	}
+
+	.room__list {
+		width: 100%;
+		display: flex;
+		position: relative;
+		top: 0;
+		left: 0;
+		background-color: transparent;
+		justify-content: space-between;
+	}
+
+	.room__list .room__list-item {
+		background-color: white;
+		border: none;
+		border-radius: 10px;
+		height: 50px;
+	}
+
+	.square__list {
+		display: flex;
+		position: relative;
+		top: 0;
+		left: 0;
+		width: 100%;
+		background-color: transparent;
+		justify-content: space-between;
+		height: 38px;
+	}
+
+	.square__list-item {
+		overflow: hidden;
+		width: 48%;
+		border-radius: 10px;
+		margin: 0;
+	}
+
+	.square__list-item input {
+		width: 100%;
+		padding: 0px 0px 0px 10px;
+	}
+
+	.price__list {
+		display: flex;
+		position: relative;
+		top: 0;
+		left: 0;
+		width: 100%;
+		background-color: transparent;
+		justify-content: space-between;
+		height: 38px;
+	}
+
+	.price__list-item {
+		overflow: hidden;
+		width: 48%;
+		border-radius: 10px;
+		margin: 0;
+	}
+
+	.price__list-item input {
+		width: 100%;
+		padding: 0px 0px 0px 10px;
+	}
+
+	.keywordsearch {
+		overflow: hidden;
+		margin: 0px 0px 20px 0px;
+		height: 50px;
+		border-radius: 10px;
 	}
 }

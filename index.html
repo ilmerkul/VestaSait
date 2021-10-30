@@ -58,13 +58,47 @@
 											<input type="text" name="deal" class="deal__input" value="Продажа">
 										</div>
 										<div class="dropdown__search">
-											<button class="downbtn2" type="button">Комнаты</button>
+											<button class="downbtn__room" type="button">Комнаты</button>
+											<ul class="room__list">
+												<li class="room__list-item" data-value='0'>
+													<input type="checkbox" name="inputrooms" value="0" class="room__input0">
+													<span>Студия</span>
+												</li>
+												<li class="room__list-item" data-value='1'>
+													<input type="checkbox" name="inputrooms" value="1" class="room__input1">
+													<span>1к</span>
+												</li>
+												<li class="room__list-item" data-value='2'>
+													<input type="checkbox" name="inputrooms" value="2" class="room__input2">
+													<span>2к</span>
+												</li>
+												<li class="room__list-item" data-value='3'>
+													<input type="checkbox" name="inputrooms" value="3" class="room__input3">
+													<span>3к</span>
+												</li>
+												<li class="room__list-item" data-value='4'>
+													<input type="checkbox" name="inputrooms" value="4" class="room__input4">
+													<span>4к</span>
+												</li>
+												<li class="room__list-item" data-value='5'>
+													<input type="checkbox" name="inputrooms" value="5" class="room__input5">
+													<span>Больше</span>
+												</li>
+											</ul>
 										</div>
 										<div class="dropdown__search">
-											<button class="downbtn3" type="button">Площадь</button>
+											<button class="downbtn__square" type="button">Площадь</button>
+											<ul class="square__list">
+												<li class="square__list-item"><input name='inputsquare' type="text" placeholder="Площадь от"></li>
+												<li class="square__list-item"><input name='inputsquare' type="text" placeholder="Площадь до"></li>
+											</ul>
 										</div>
 										<div class="dropdown__search">
-											<button class="downbtn4" type="button">Цена</button>
+											<button class="downbtn__price" type="button">Цена</button>
+											<ul class="price__list">
+												<li class="price__list-item"><input type="text" name="inputprice" placeholder="Цена от"></li>
+												<li class="price__list-item"><input type="text" name="inputprice" placeholder="Цена до"></li>
+											</ul>
 										</div>
 										<input type="text" class="keywordsearch" placeholder="Введите адрес, район, метро или артикул объекта">
 										<button class="drop__search">Найти</button>

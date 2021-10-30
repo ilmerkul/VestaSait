@@ -27,6 +27,18 @@ ClassListSelect1 = '.deals__list'
 ClassListSelectItem1 = '.deals__list-item'
 ClassInputSelect1 = '.deal__input'
 
+ClassBtnCheckbox1 = '.downbtn__room'
+ClassListCheckbox1 = '.room__list'
+ClassListCheckboxItem1 = '.room__list-item'
+ClassInputCheckbox1 = '.room__input'
+
+ClassBtnInput1 = '.downbtn__square'
+ClassListInput1 = '.square__list'
+ClassListInputItem1 = '.square__list-item'
+ClassBtnInput2 = '.downbtn__price'
+ClassListInput2 = '.price__list'
+ClassListInputItem2 = '.price__list-item'
+
 function CustomSelect(ClassBtnSelect, ClassListSelect, ClassListSelectItem, ClassInputSelect) {
 	document.querySelector(ClassBtnSelect).addEventListener('click', function () {
 	document.querySelector(ClassListSelect).classList.toggle('visible');
@@ -52,4 +64,53 @@ function CustomSelect(ClassBtnSelect, ClassListSelect, ClassListSelectItem, Clas
 	})
 };
 
+function CustomCheckbox(ClassBtnCheckbox, ClassListCheckbox, ClassListCheckboxItem, ClassInputCheckbox) {
+	document.querySelector(ClassBtnCheckbox).addEventListener('click', function () {
+		document.querySelector(ClassListCheckbox).classList.toggle('visible');
+		document.querySelector(ClassBtnCheckbox).classList.toggle('open');
+	});
+
+	document.querySelectorAll(ClassListCheckboxItem).forEach(function (listItem) {
+		listItem.addEventListener('click', function (e) {
+			e.stopPropagation();
+			this.classList.toggle('select');
+			name = ClassInputCheckbox + this.dataset.value;
+			chkInput = document.querySelector(name);
+			chkInput.checked = !chkInput.checked;
+		})
+	});
+
+	document.addEventListener('click', function (e) {
+		if (e.target !== document.querySelector(ClassBtnCheckbox)) {
+			document.querySelector(ClassListCheckbox).classList.remove('visible');
+			document.querySelector(ClassBtnCheckbox).classList.remove('open');
+		}
+	})
+};
+
+function CustomInput(ClassBtnInput, ClassListInput, ClassListInputItem) {
+	document.querySelector(ClassBtnInput).addEventListener('click', function () {
+		document.querySelector(ClassListInput).classList.toggle('visible');
+		document.querySelector(ClassBtnInput).classList.toggle('open');
+	});
+
+	document.querySelectorAll(ClassListInputItem).forEach(function (listItem) {
+		listItem.addEventListener('click', function (e) {
+			e.stopPropagation();
+		})
+	});
+
+	document.addEventListener('click', function (e) {
+		if (e.target !== document.querySelector(ClassBtnInput)) {
+			document.querySelector(ClassListInput).classList.remove('visible');
+			document.querySelector(ClassBtnInput).classList.remove('open');
+		}
+	})
+};
+
 CustomSelect(ClassBtnSelect1, ClassListSelect1, ClassListSelectItem1, ClassListSelectItem1);
+CustomCheckbox(ClassBtnCheckbox1, ClassListCheckbox1, ClassListCheckboxItem1, ClassInputCheckbox1);
+CustomInput(ClassBtnInput1, ClassListInput1, ClassListInputItem1);
+CustomInput(ClassBtnInput2, ClassListInput2, ClassListInputItem2);
+
+

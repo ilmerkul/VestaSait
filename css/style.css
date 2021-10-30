@@ -600,6 +600,11 @@ li.phone a:hover {
 	border-right: 2px solid #c9c9c9;
     border-bottom: 2px solid #c9c9c9;
     transform: translateY(-50%) rotate(45deg);
+    transition: all 0.5s ease 0s;
+}
+
+.dropdown__search button.open:after {
+	transform: translateY(-50%) rotate(-135deg);
 }
 
 .dropdown__search button:hover {
@@ -608,7 +613,8 @@ li.phone a:hover {
 
 .drop__search {
 	text-align: center;
-	border-bottom-right-radius: 3px;
+	border-bottom-right-radius: 10px;
+	border-top-right-radius: 10px;
 	height: 60px;
 	padding: 15px 30px;
 	background-color: #5e5373;
@@ -623,6 +629,106 @@ li.phone a:hover {
 .keywordsearch {
 	width: 100%;
 	padding: 0px 0px 0px 10px;
+}
+
+.room__list {
+	display: none;
+	grid-template-columns: 1fr 1fr;
+	position: absolute;
+	left: 0;
+	top: 70px;
+	list-style: none;
+	background-color: white;
+	overflow: hidden;
+	z-index: 3;
+	border-radius: 10px;
+}
+
+.room__list.visible {
+	display: grid;
+}
+
+.room__list input {
+	display: none;
+}
+
+.room__list .room__list-item {
+	width: 100px;
+	height: 30px;
+	border: 1px solid #5e5e5e;
+	border-radius: 3px;
+	text-align: center;
+	margin: 5px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.room__list .room__list-item:hover {
+	cursor: pointer;
+}
+
+.room__list .room__list-item.select {
+	color: white;
+	background-color: #5e5373;
+}
+
+.square__list {
+	display: none;
+	position: absolute;
+	left: 0;
+	top: 70px;
+	list-style: none;
+	background-color: white;
+	overflow: hidden;
+	z-index: 3;
+	border-radius: 10px;
+	width: 200px;
+	padding: 5px;
+}
+
+.square__list.visible {
+	display: block;
+}
+
+.square__list-item {
+	margin: 10px 0px;
+	border: 1px solid #5e5e5e;
+	border-radius: 3px;
+
+}
+
+.square__list-item input {
+	height: 27px;
+}
+
+.price__list {
+	display: none;
+	position: absolute;
+	left: 0;
+	top: 70px;
+	list-style: none;
+	background-color: white;
+	overflow: hidden;
+	z-index: 3;
+	border-radius: 10px;
+	width: 200px;
+	padding: 5px;
+}
+
+.price__list.visible {
+	display: block;
+}
+
+.price__list-item {
+	margin: 10px 0px;
+	border: 1px solid #5e5e5e;
+	border-radius: 3px;
+
+}
+
+.price__list-item input {
+	height: 27px;
 }
 
 @media (max-width: 767px) {

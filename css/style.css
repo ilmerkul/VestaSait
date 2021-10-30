@@ -20,6 +20,7 @@ html,body{
 	font-size: 100%;
 	line-height: 1;
 	font-size: 14px;
+	line-height: 1.8;
 	ms-text-size-adjust: 100%;
 	-moz-text-size-adjust: 100%;
 	-webkit-text-size-adjust: 100%;
@@ -831,4 +832,55 @@ li.phone a:hover {
 		height: 50px;
 		border-radius: 10px;
 	}
+}
+
+/*about company*/
+
+.main__about-company-content {
+	display: flex;
+	justify-content: space-between;
+	margin: 40px 0px 40px 0px;
+}
+
+.main__about-company-left {
+	width: 70%;
+}
+
+.about-company-title {
+	width: 100%;
+    font-size: 20px;
+    font-weight: 700;
+    color: black;
+}
+
+.about-company-content {
+    color: #333;
+}
+
+.about-company-right-title {
+	width: 100%;
+    font-size: 20px;
+    font-weight: 700;
+    color: black;
+}
+
+.main-page-all-rieltors {
+	color: #5e5373;
+}
+
+.about-company-right-block {
+	display: flex;
+	margin: 0px 0px 20px 0px;
+}
+
+.about-company-right-block img {
+	height: 80px;
+}
+
+.about-company-right-block-aside {
+	text-align: center;
+	vertical-align: middle;
+	padding: 20px 0px 0px 20px;
+	font-size: 16px;
+	font-weight: 700;
 }

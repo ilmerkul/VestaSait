@@ -6,18 +6,34 @@ $(document).ready(function() {
 	$('li.phone .phone__btn').click(function(event) {
 		$('.sub-phone,li.phone').toggleClass('active')
 	});
-	$('.tab1').click(function(event) {
-		if ($('.tab2').hasClass('active')) {
-			$('.tab2').removeClass('active')
-			$('.tab1').addClass('active')
+	$('.filter-tab1').click(function(event) {
+		if ($('.filter-tab2').hasClass('active')) {
+			$('.filter-tab2').removeClass('active')
+			$('.filter-tab1').addClass('active')
 		}
 	});
-	$('.tab2').click(function(event) {
-		if ($('.tab1').hasClass('active')) {
-			$('.tab1').removeClass('active')
-			$('.tab2').addClass('active')
+	$('.filter-tab2').click(function(event) {
+		if ($('.filter-tab1').hasClass('active')) {
+			$('.filter-tab1').removeClass('active')
+			$('.filter-tab2').addClass('active')
 		}
-	})
+	});
+	$('.services-tab1').click(function(event) {
+		if ($('.services-tab2').hasClass('active')) {
+			$('.services-tab2').removeClass('active')
+			$('.services-tab1').addClass('active')
+			$('.services__list2').removeClass('active')
+			$('.services__list1').addClass('active')
+		}
+	});
+	$('.services-tab2').click(function(event) {
+		if ($('.services-tab1').hasClass('active')) {
+			$('.services-tab1').removeClass('active')
+			$('.services-tab2').addClass('active')
+			$('.services__list1').removeClass('active')
+			$('.services__list2').addClass('active')
+		}
+	});
 });
 
 

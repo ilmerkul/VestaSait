@@ -911,4 +911,8 @@ li.phone a:hover {
 	.about-company-right-blocks a:last-of-type {
 		display: none;
 	}
+
+	.about-company-right-block-aside {
+		padding: 20px 0px 0px 5px;
+	}
 }

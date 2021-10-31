@@ -1000,6 +1000,10 @@ li.phone a:hover {
 		display: block;
 	}
 
+	.dropdown__questions-title {
+		display: none;
+	}
+
 	.deals {
 		border-radius: 10px;
 		border-top-left-radius: 0;

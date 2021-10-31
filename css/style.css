@@ -996,7 +996,7 @@ li.phone a:hover {
 		margin: 150px 0px 0px 0px;
 	}
 
-	.tab__content form {
+	.main__filter.active {
 		display: block;
 	}
 

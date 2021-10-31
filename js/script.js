@@ -10,12 +10,16 @@ $(document).ready(function() {
 		if ($('.filter-tab2').hasClass('active')) {
 			$('.filter-tab2').removeClass('active')
 			$('.filter-tab1').addClass('active')
+			$('.dropdown__questions').removeClass('active')
+			$('.main__filter').addClass('active')
 		}
 	});
 	$('.filter-tab2').click(function(event) {
 		if ($('.filter-tab1').hasClass('active')) {
 			$('.filter-tab1').removeClass('active')
 			$('.filter-tab2').addClass('active')
+			$('.main__filter').removeClass('active')
+			$('.dropdown__questions').addClass('active')
 		}
 	});
 	$('.services-tab1').click(function(event) {

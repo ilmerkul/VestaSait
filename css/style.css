@@ -509,7 +509,11 @@ li.phone a:hover {
 	opacity: 1;
 }
 
-.tab__content form {
+.main__filter {
+	display: none;
+}
+
+.main__filter.active {
 	display: flex;
 }
 
@@ -733,6 +737,69 @@ li.phone a:hover {
 	height: 27px;
 }
 
+.dropdown__questions {
+	display: none;
+	justify-content: space-between;
+	background: white;
+	height: 360px;
+	box-shadow: 0 0 24px rgb(51 51 51 / 80%), 0 0 2px rgb(51 51 51 / 80%);
+	overflow: hidden;
+	border-radius: 10px;
+}
+
+.dropdown__questions.active {
+	display: flex;
+}
+
+.dropdown__questions-title {
+	padding: 40px 0px 0px 20px;
+}
+
+.dropdown__questions-title h3 {
+	font-size: 26px;
+    font-weight: 500;
+}
+
+.dropdown__questions-form {
+	display: flex;
+	flex-direction: column;
+	padding: 20px;
+	margin: 0px 20px 0px 0px;
+	width: 300px;
+}
+
+.dropdown__questions-form p {
+	margin: 20px 0px 5px 0px;
+}
+
+.question-desription {
+	margin: 20px 0px 40px 0px;
+	height: 100px;
+}
+
+.dropdown__questions-form input {
+	border: 1px solid rgba(0, 0, 0, 0.3);
+	border-radius: 5px;
+}
+
+.dropdown__questions-form select {
+	border: 1px solid rgba(0, 0, 0, 0.3);
+	border-radius: 5px;
+	height: 37px;
+}
+
+.question-tel {
+	height: 40px;
+}
+
+.submit_question {
+	background: #5e5373;
+	overflow: hidden;
+	border-radius: 10px;
+	height: 30px;
+	color: white;
+}
+
 /*about company*/
 
 .main__about-company {
@@ -919,6 +986,8 @@ li.phone a:hover {
 		padding: 50px 0px 0px 0px;
 	}
 
+	/*adaptive search*/
+
 	.search__body {
 		height: 700px;
 	}
@@ -1015,6 +1084,12 @@ li.phone a:hover {
 		border-radius: 10px;
 	}
 
+}
+
+@media (max-width:  767px) {
+
+	/*adaptive about-company*/
+
 	.main__about-company-content {
 		display: block;
 	}
@@ -1038,6 +1113,8 @@ li.phone a:hover {
 	.about-company-right-block-aside {
 		padding: 20px 0px 0px 5px;
 	}
+
+	/*adaptive services*/
 
 	.services-items ul {
 		flex-direction: column;

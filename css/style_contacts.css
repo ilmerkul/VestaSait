@@ -386,11 +386,12 @@ li.phone a:hover {
 
 .footer__social li {
 	list-style: none;
-	margin: 0px 30px;
+	margin: 0px 10px;
 }
 
 .footer__social li img {
 	flex: 0 0 40px;
+	height: 40px;
 }
 
 @media(max-width: 767px) {
@@ -555,10 +556,20 @@ li.phone a:hover {
 	overflow: hidden;
 	border-radius: 10px;
 	font-size: 25px;
-	margin: 20px 0px 0px 0px;
+	margin: 20px 0px 30px 0px;
 	transition: all 0.2s ease 0s;
 }
 
 .contacts-feedback-button:hover {
 	background-color: rgb(113, 100, 138);
+}
+
+@media (max-width: 767px) {
+	.contacts {
+		display: block;
+	}
+
+	.contacts-feedback {
+		margin: 0 auto;
+	}
 }

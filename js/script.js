@@ -42,6 +42,8 @@ $(document).ready(function() {
 
 
 
+
+
 ClassBtnSelect1 = '.deals'
 ClassListSelect1 = '.deals__list'
 ClassListSelectItem1 = '.deals__list-item'

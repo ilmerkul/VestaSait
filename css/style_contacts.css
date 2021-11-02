@@ -564,6 +564,16 @@ li.phone a:hover {
 	background-color: rgb(113, 100, 138);
 }
 
+.yandex-map iframe {
+	width: 100%;
+}
+
+.yandex-map h3 {
+	margin: 0px 0px 20px 0px;
+    font-size: 25px;
+    padding: 0px 0px 0px 20px;
+}
+
 @media (max-width: 767px) {
 	.contacts {
 		display: block;
@@ -571,5 +581,10 @@ li.phone a:hover {
 
 	.contacts-feedback {
 		margin: 0 auto;
+	}
+
+	.contacts-feedback-button {
+		width: 100%;
+		height: 70px;
 	}
 }

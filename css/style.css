@@ -742,10 +742,12 @@ li.phone a:hover {
 	display: none;
 	justify-content: space-between;
 	background: white;
-	height: 360px;
+	background-image: linear-gradient(-258deg,#5e5373,rgba(77,108,211,.2));
+	height: 400px;
 	box-shadow: 0 0 24px rgb(51 51 51 / 80%), 0 0 2px rgb(51 51 51 / 80%);
 	overflow: hidden;
 	border-radius: 10px;
+	border-top-left-radius: 0;
 }
 
 .dropdown__questions.active {
@@ -753,7 +755,7 @@ li.phone a:hover {
 }
 
 .dropdown__questions-title {
-	padding: 40px 0px 0px 20px;
+	padding: 40px 20px;
 }
 
 .dropdown__questions-title h3 {
@@ -770,26 +772,32 @@ li.phone a:hover {
 }
 
 .dropdown__questions-form p {
-	margin: 20px 0px 5px 0px;
+	margin: 15px 0px 5px 0px;
 }
 
 .question-desription {
-	margin: 20px 0px 40px 0px;
-	height: 100px;
+	margin: 20px 0px 20px 0px;
+	height: 120px;
 }
 
-.dropdown__questions-form input {
+.dropdown__questions-form textarea, input {
 	border: 1px solid rgba(0, 0, 0, 0.3);
 	border-radius: 5px;
+	padding: 5px 0px 0px 5px;
 }
 
 .dropdown__questions-form select {
 	border: 1px solid rgba(0, 0, 0, 0.3);
 	border-radius: 5px;
 	height: 37px;
+	background-color: white;
 }
 
 .question-tel {
+	height: 40px;
+}
+
+.question-mail {
 	height: 40px;
 }
 
@@ -797,7 +805,7 @@ li.phone a:hover {
 	background: #5e5373;
 	overflow: hidden;
 	border-radius: 10px;
-	height: 30px;
+	height: 50px;
 	color: white;
 }
 
@@ -1001,10 +1009,6 @@ li.phone a:hover {
 		display: block;
 	}
 
-	.dropdown__questions-title {
-		display: none;
-	}
-
 	.deals {
 		border-radius: 10px;
 		border-top-left-radius: 0;
@@ -1089,6 +1093,14 @@ li.phone a:hover {
 		border-radius: 10px;
 	}
 
+	.dropdown__questions-title {
+		display: none;
+	}
+
+	.dropdown__questions-form {
+		
+		width: 100%;
+	}
 }
 
 @media (max-width:  767px) {
